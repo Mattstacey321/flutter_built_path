@@ -5,9 +5,5 @@ import 'package:build/build.dart';
 import 'src/path_generator.dart';
 
 Builder svgPath(BuilderOptions options) {
-  return svgPathSharedPartBuilder(
-    formatOutput: (String code) {
-      return code;
-    },
-  );
+  return svgPathSharedPartBuilder();
 }
