@@ -1,6 +1,6 @@
 import 'dart:ui' show Path;
 
-import 'package:built_path_annotations/built_path_annotations.dart';
+import 'package:built_path/built_path.dart';
 import 'package:flutter/material.dart';
 
 part 'main.svg_path.g.dart';
@@ -15,13 +15,13 @@ class MyApp extends StatelessWidget {
       theme: new ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: new MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
 }
 
 class MyHomePage extends StatelessWidget {
-  const MyHomePage({Key key, this.title}) : super(key: key);
+  const MyHomePage({Key? key, required this.title}) : super(key: key);
   final String title;
 
   @SvgPath('M20,30 Q40,5 60,30 T100,30')
